@@ -81,7 +81,7 @@ public class MarkdownParseTest {
     public void testFile8Again() throws IOException{
         Path fileName = Path.of("test-file8.md");
         String content = Files.readString(fileName);
-        List<String> correctList = List.of("page.com");
+        List<String> correctList = List.of();
         assertEquals(MarkdownParse.getLinks(content),correctList);
     }
 }
